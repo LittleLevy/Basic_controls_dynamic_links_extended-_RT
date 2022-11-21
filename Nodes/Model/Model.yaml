@@ -1,0 +1,40 @@
+Name: Model
+Type: FolderType
+Children:
+- Name: System1
+  Type: System
+  Children:
+  - Name: NetworkInterfaces
+    Type: BaseObjectType
+  - Name: DateTimeConfiguration
+    Type: DateTimeConfiguration
+    Children:
+    - Name: SynchronizationMode
+      Type: BaseDataVariableType
+      DataType: TimeSynchronizationModeEnum
+      Value: 0
+    - Name: RemoteNTPServer
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: DateTime
+      Id: g=a7371cf6fd482fddd831af0a1c7a75f7
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "2022-01-01T00:00:00.0000000"
+    - Name: TimeZone
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: LocalNTPServerInterfaces
+      Type: BaseDataVariableType
+      DataType: String
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
+  - Class: Reference
+    Target: ns=8;i=16
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=17
+    Direction: Forward
